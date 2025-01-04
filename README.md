@@ -90,10 +90,6 @@ The timetable generator uses Google OR-Tools' constraint programming solver to:
    - Room type requirements
 4. Find an optimal solution that satisfies all constraints
 
-## License
-
-[Your chosen license]
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
