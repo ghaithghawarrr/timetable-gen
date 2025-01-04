@@ -1,0 +1,235 @@
+{
+    "classes": [
+        {
+            "class_name": "LSI1",
+            "grade": 1,
+            "speciality": "CS",
+            "groups": [
+                {
+                    "group_name": "A",
+                    "td_groups": [
+                        {
+                            "td_name": "TD1",
+                            "tp_groups": [
+                                {"tp_name": "TP1.1"},
+                                {"tp_name": "TP1.2"}
+                            ]
+                        },
+                        {
+                            "td_name": "TD2",
+                            "tp_groups": [
+                                {"tp_name": "TP2.1"},
+                                {"tp_name": "TP2.2"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "group_name": "B",
+                    "td_groups": [
+                        {
+                            "td_name": "TD3",
+                            "tp_groups": [
+                                {"tp_name": "TP3.1"},
+                                {"tp_name": "TP3.2"}
+                            ]
+                        },
+                        {
+                            "td_name": "TD4",
+                            "tp_groups": [
+                                {"tp_name": "TP4.1"},
+                                {"tp_name": "TP4.2"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "class_name": "LGLSI2",
+            "grade": 2,
+            "speciality": "CS",
+            "groups": [
+                {
+                    "group_name": "A",
+                    "td_groups": [
+                        {
+                            "td_name": "TD1",
+                            "tp_groups": [
+                                {"tp_name": "TP1.1"},
+                                {"tp_name": "TP1.2"}
+                            ]
+                        },
+                        {
+                            "td_name": "TD2",
+                            "tp_groups": [
+                                {"tp_name": "TP2.1"},
+                                {"tp_name": "TP2.2"}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "group_name": "C",
+                    "td_groups": [
+                        {
+                            "td_name": "TD3",
+                            "tp_groups": [
+                                {"tp_name": "TP3.1"},
+                                {"tp_name": "TP3.2"}
+                            ]
+                        },
+                        {
+                            "td_name": "TD4",
+                            "tp_groups": [
+                                {"tp_name": "TP4.1"},
+                                {"tp_name": "TP4.2"}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "rooms": [
+        {
+            "id": "A1",
+            "type": "AMPHI",
+            "capacity": 300,
+            "features": []
+        },
+        {
+            "id": "TD1",
+            "type": "TD_ROOM",
+            "capacity": 40,
+            "features": []
+        },
+        {
+            "id": "TD2",
+            "type": "TD_ROOM",
+            "capacity": 40,
+            "features": []
+        },
+        {
+            "id": "LAB1",
+            "type": "LAB",
+            "capacity": 25,
+            "features": ["computers"]
+        },
+        {
+            "id": "LAB2",
+            "type": "LAB",
+            "capacity": 25,
+            "features": ["computers"]
+        }
+    ],
+    "sessions": [
+        {
+            "id": "MATH1_COURS",
+            "subject": "Mathematics",
+            "type": "COURS",
+            "room_type": "AMPHI",
+            "professor_id": "P1",
+            "group": "LSI1.A",
+            "required_features": [],
+            "week_pattern": "WEEKLY",
+            "priority": 3
+        },
+        {
+            "id": "MATH2_COURS",
+            "subject": "Mathematics",
+            "type": "COURS",
+            "room_type": "AMPHI",
+            "professor_id": "P1",
+            "group": "LGLSI2.A",
+            "required_features": [],
+            "week_pattern": "WEEKLY",
+            "priority": 3
+        },
+        {
+            "id": "MATH1_TD1",
+            "subject": "Mathematics",
+            "type": "TD",
+            "room_type": "TD_ROOM",
+            "professor_id": "P2",
+            "group": "LSI1.A.TD1",
+            "required_features": [],
+            "week_pattern": "WEEKLY"
+        },
+        {
+            "id": "MATH1_TD2",
+            "subject": "Mathematics",
+            "type": "TD",
+            "room_type": "TD_ROOM",
+            "professor_id": "P2",
+            "group": "LSI1.A.TD2",
+            "required_features": [],
+            "week_pattern": "WEEKLY"
+        },
+        {
+            "id": "MATH1_TP1",
+            "subject": "Mathematics",
+            "type": "TP",
+            "room_type": "LAB",
+            "professor_id": "P2",
+            "group": "LSI1.A.TD1.TP1.1",
+            "required_features": ["computers"],
+            "week_pattern": "WEEKLY"
+        },
+        {
+            "id": "MATH1_TP2",
+            "subject": "Mathematics",
+            "type": "TP",
+            "room_type": "LAB",
+            "professor_id": "P2",
+            "group": "LSI1.A.TD1.TP1.2",
+            "required_features": ["computers"],
+            "week_pattern": "WEEKLY"
+        }
+    ],
+    "professors": [
+        {
+            "id": "P1",
+            "name": "Dr. Smith",
+            "subject_levels": [
+                {
+                    "subject": "Mathematics",
+                    "grade": 1,
+                    "speciality": "CS"
+                },
+                {
+                    "subject": "Mathematics",
+                    "grade": 2,
+                    "speciality": "CS"
+                }
+            ]
+        },
+        {
+            "id": "P2",
+            "name": "Dr. Johnson",
+            "subject_levels": [
+                {
+                    "subject": "Programming",
+                    "grade": 1,
+                    "speciality": "CS"
+                }
+            ]
+        },
+        {
+            "id": "P3",
+            "name": "Dr. Williams",
+            "subject_levels": [
+                {
+                    "subject": "Programming",
+                    "grade": 1,
+                    "speciality": "CS"
+                },
+                {
+                    "subject": "Programming Lab",
+                    "grade": 1,
+                    "speciality": "CS"
+                }
+            ]
+        }
+    ]
+}
